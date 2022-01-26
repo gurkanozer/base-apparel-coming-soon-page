@@ -42,12 +42,12 @@ form.addEventListener('submit', (e) => {
         else hasError = true;
     }
     if(hasError){ 
-        console.log('..asdas.');
+        console.log('Error...');
         e.preventDefault();
     }
     else{
         //do something...
-        console.log('...');
+        console.log('Do something...');
     }
 });
 
