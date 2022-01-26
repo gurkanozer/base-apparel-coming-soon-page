@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+    <link rel="stylesheet" href="./style/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="content-container">
+        <div class="container">
+          <img
+            class="brand-logo"
+            src="./images/logo.svg"
+            alt="Base Apparel Coming Soon"
+          />
+          <img
+            class="img--mobile"
+            src="./images/hero-mobile.jpg"
+            alt="Base Apparel Mobile Image"
+          />
+          <h1 class="title">
+            <span class="title__light">we're</span> coming soon
+          </h1>
+          <p class="paragraph">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals
+          </p>
+          <form class="form" autocomplete="off">
+            <div class="form__group">
+                <input type="text" name="email" id="email" class="form__input error">
+                <label for="email" class="form__label">Email Address</label>
+                <span class="form__exclamation"><i class="fas fa-exclamation-circle fa-2x"></i></span>
+                <span class="form__error">There is 1 little error message</span>
+                <button type="submit" class="form__btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="img-container">
+        <img
+          src="./images/hero-desktop.jpg"
+          alt="Base Apparel Desktop Image"
+          class="img--desktop"
+        />
+      </div>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>

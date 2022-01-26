@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+/*** FONT **/
+/** COLOR **/
+/**BREAK POINTS*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  font-family: "Josefin Sans", sans-serif;
+  background: linear-gradient(135deg, white, #fff5f5);
+  color: #413a3a;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+  background-color: linear-gradient(135deg, white, #fff5f5);
+}
+
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+  background-color: #ce9797;
+  border-radius: 1rem;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  letter-spacing: 1rem;
+  line-height: 4.2rem;
+}
+
+@media screen and (min-width: 992px) {
+  h1 {
+    font-size: 6.4rem;
+    letter-spacing: 1.6rem;
+    line-height: 6.8rem;
+  }
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+}
+
+@media screen and (min-width: 992px) {
+  p {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+  }
+}
+
+.content-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+}
+
+@media screen and (min-width: 992px) {
+  .content-container {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
+.img-container {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .img-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+  }
+}
+
+.brand-logo {
+  height: 2.1rem;
+  width: auto;
+  margin: 3.1rem;
+}
+
+@media screen and (min-width: 576px) {
+  .brand-logo {
+    margin: 3.1rem auto;
+    height: 3.3rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .brand-logo {
+    margin: 6.4rem 0 13.5rem;
+  }
+}
+
+.img--mobile {
+  margin-bottom: 6.6rem;
+}
+
+@media screen and (min-width: 992px) {
+  .img--mobile {
+    display: none;
+  }
+}
+
+.img--desktop {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .img--desktop {
+    display: block;
+    max-width: 61rem;
+    width: 100%;
+    min-height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top;
+       object-position: top;
+  }
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: 42rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 55.5rem;
+    margin: 0;
+  }
+}
+
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1.6rem;
+  font-weight: 600;
+}
+
+.title__light {
+  font-weight: 300;
+  color: #ce9797;
+}
+
+@media screen and (min-width: 992px) {
+  .title {
+    text-align: left;
+  }
+}
+
+.paragraph {
+  text-align: center;
+  color: #ce9797;
+  padding: 0 3.1rem;
+  margin-bottom: 1.6rem;
+}
+
+@media screen and (min-width: 992px) {
+  .paragraph {
+    text-align: left;
+    padding: 0;
+    font-weight: 600;
+    max-width: 44rem;
+    margin-bottom: 4.4rem;
+  }
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    background: url("../images/bg-pattern-desktop.svg") left top/contain no-repeat, linear-gradient(135deg, white, #fff5f5);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+.form {
+  width: 100%;
+  max-width: 44.5rem;
+  padding: 0 3.1rem;
+  position: relative;
+}
+
+.form__group.has-error .form__input {
+  border: 0.1rem solid #f96262;
+  color: #f96262;
+}
+
+.form__group.has-error .form__exclamation {
+  opacity: 1;
+}
+
+.form__group.has-error .form__error {
+  opacity: 1;
+}
+
+.form__input {
+  width: 100%;
+  max-width: 44.5rem;
+  line-height: 4.6rem;
+  font-size: 1.6rem;
+  padding-left: 2.6rem;
+  padding-right: 9rem;
+  color: #ce9797;
+  background-color: transparent;
+  border-radius: 2.8rem;
+  border: 0.1rem solid #413a3a;
+  outline: none;
+}
+
+@media screen and (min-width: 992px) {
+  .form__input {
+    line-height: 5.6rem;
+    padding-right: 13rem;
+  }
+}
+
+.form__input:focus ~ .form__label,
+.form__input.active ~ .form__label {
+  top: -0.6rem;
+  background: linear-gradient(135deg, white, #fff5f5);
+  font-size: 1.2rem;
+}
+
+.form__label {
+  position: absolute;
+  left: 5.9rem;
+  top: 1.4rem;
+  font-size: 1.6rem;
+  color: #ce9797;
+  pointer-events: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+@media screen and (min-width: 992px) {
+  .form__label {
+    left: 2.8rem;
+    top: 2rem;
+  }
+}
+
+.form__btn {
+  width: 6.4rem;
+  height: 4.8rem;
+  border-radius: 2.8rem;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 3.1rem;
+}
+
+.form__btn:hover {
+  -webkit-filter: brightness(1.15);
+          filter: brightness(1.15);
+}
+
+@media screen and (min-width: 992px) {
+  .form__btn {
+    right: 0rem;
+    height: 5.8rem;
+    width: 10rem;
+  }
+}
+
+.form__exclamation {
+  position: absolute;
+  top: 1.4rem;
+  right: 10rem;
+  font-size: 1rem;
+  color: #f96262;
+  opacity: 0;
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+}
+
+@media screen and (min-width: 992px) {
+  .form__exclamation {
+    right: 10.4rem;
+    top: 1.6rem;
+    font-size: 1.2rem;
+  }
+}
+
+.form__error {
+  position: absolute;
+  bottom: -1.6rem;
+  left: 2.4rem;
+  font-size: 1.4rem;
+  color: #f96262;
+  opacity: 0;
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+}
+
+@media screen and (min-width: 992px) {
+  .form {
+    padding: 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */

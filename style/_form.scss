@@ -1,0 +1,106 @@
+.form{
+    width:100%;
+    max-width:44.5rem;
+    padding:0 3.1rem;
+    position: relative;
+    &__group{
+        &.has-error{
+            .form__input{
+                border:0.1rem solid $color-secondary;
+                color:$color-secondary;
+            }
+            .form__exclamation{
+                opacity: 1;
+            }
+            .form__error{
+                opacity: 1;
+            }
+        }
+    }
+    &__input{
+        width:100%;
+        max-width:44.5rem;
+        line-height: 4.6rem;
+        font-size:1.6rem;
+        padding-left:2.6rem;
+        padding-right:9rem;
+        color:$color-primary;
+        background-color: transparent;
+        border-radius: 2.8rem;
+        border:0.1rem solid $color-tertiary;
+        outline:none;
+        @media screen and(min-width:$largeScreen){
+            line-height: 5.6rem;
+            padding-right:13rem;
+        }
+    }
+    &__input:focus~&__label,
+    &__input.active~&__label {
+        top: -0.6rem;
+        background: $gradient-1;
+        font-size: 1.2rem;
+    }
+
+    &__label {
+        position: absolute;
+        left: 5.9rem;
+        top: 1.4rem;
+        font-size:1.6rem;
+        // padding: 0 0.2rem;
+        color: $color-primary;
+        pointer-events: none;
+        transition: .5s;
+        @media screen and(min-width:$largeScreen){
+            left:2.8rem;
+            top:2rem;
+        }
+    }
+    &__btn{
+        width:6.4rem;
+        height:4.8rem;
+        border-radius: 2.8rem;
+        outline:none;
+        border:none;
+        color:#fff;
+        font-size: 2rem;
+        background:$gradient-2;
+        cursor: pointer;
+        position:absolute;
+        top:0;
+        right:3.1rem;
+        &:hover {
+            filter: brightness(1.15);
+          }
+        @media screen and(min-width:$largeScreen){
+            right:0rem;
+            height:5.8rem;
+            width:10rem;
+        }
+    }
+    &__exclamation{
+        position:absolute;
+        top:1.4rem;
+        right:10rem;
+        font-size:1rem;
+        color:$color-secondary;
+        opacity:0;
+        transition: opacity .3s ease;
+        @media screen and(min-width:$largeScreen){
+            right:10.4rem;
+            top:1.6rem;
+            font-size: 1.2rem;
+        }
+    }
+    &__error{
+        position: absolute;
+        bottom: -1.6rem;
+        left: 2.4rem;
+        font-size:1.4rem;
+        color:$color-secondary;
+        opacity: 0;
+        transition: opacity .3s ease;
+    }
+    @media screen and(min-width:$largeScreen){
+        padding:0;
+    }
+}
